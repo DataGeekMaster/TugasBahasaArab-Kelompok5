@@ -1,41 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <title>Tugas Bahasa Arab</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
-
-    .gambar-kecil {
-      width: 500px;
-      height: auto;
-    }
-
-    h1 {
-      color: #333;
-      text-align: center;
-    }
-
-    .item {
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      padding: 10px;
-      border-radius: 5px;
-    }
-
-    .item h2 {
-      margin-top: 0;
-    }
-
-    .item p {
-      margin-bottom: 10px;
-    }
-  </style>
 </head>
 <body>
+  <button onclick="toggleBox()" id="icon">
+    <img src="https://www.pngplay.com/wp-content/uploads/12/User-Avatar-Profile-Background-PNG-Clip-Art-Image.png" alt="Avatar" class="icon-image">
+    <span class="icon-text">Anggota Kelompok</span>
+  </button>
+  <div id="memberList">
+    <div class="box">
+      <span id="close" onclick="toggleBox()">X</span>
+      <h2>Kelompok 1</h2>
+      <ul>
+        <li>Abdurrahman Dzaky Safrullah</li>
+        <li>Ahmad Yusuf</li>
+        <li>Fadel Muhammad S</li>
+        <li>Fadhil Fajri Rahman</li>
+        <li>Muh. Fachri Rusli</li>
+        <li>Muh. Sibgha</li>
+        <li>Muh. Isa</li>
+      </ul>
+    </div>
+  </div>
+
   <h1>Tugas Bahasa Arab</h1>
 
   <div class="item">
@@ -416,18 +405,6 @@ Budaya dan Tradisi: Zaitun memiliki nilai budaya yang tinggi dalam makanan dan m
 Zaitun adalah buah yang penting dalam budaya Mediterania dan dikenal karena minyak zaitunnya yang sehat dan rasanya yang khas. Baik dalam bentuk buahnya atau sebagai minyak, zaitun memiliki nilai kuliner yang tinggi dan memberikan manfaat kesehatan yang beragam.</p>
 </div>
 
-<h2>Kelompok 1</h2>
-<h3>
-  Abdurrahman Dzaky Safrullah<br>
-  Ahmad Yusuf<br>
-  Fadel Muhammad S<br>
-  Fadhil Fajri Rahman<br>
-  Muh. Fachri Rusli<br>
-  Muh. Sibgha<br>
-  Muh. Isa
-</h3>
-
+<script src="script.js"></script>
 </body>
 </html>
-
-
