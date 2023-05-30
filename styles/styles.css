@@ -5,14 +5,12 @@ body {
 }
 
 .gambar-kecil {
-  width: 30%;
   height: auto;
 }
 
 h1 {
   color: #333;
   text-align: center;
-  font-size: 3rem;
 }
 
 .item {
@@ -84,11 +82,7 @@ h1 {
 }
 
 .judul-box{
-  font-size: 2.5rem; /* Ubah ukuran font sesuai kebutuhan */
-}
-
-.box-text{
-  font-size: 2rem; /* Ubah ukuran font sesuai kebutuhan */
+  text-align: center;
 }
 
 #close {
@@ -103,4 +97,142 @@ h1 {
   display: block;
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .box {
+    width: 280px;
+    padding: 20px;
+  }
+  .gambar-kecil {
+    width: 50%;
+  }
+  h1 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+  }
+  .icon-image {
+    width: 1.7rem; /* 8px = 0.5rem */
+  }
+  .icon-text {
+    font-size: 1rem; /* Ubah ukuran font sesuai kebutuhan */
+  }
+  .judul-box{
+    font-size: 1.5rem; /* Ubah ukuran font sesuai kebutuhan */
+  }
+  .box-text{
+    font-size: 1rem; /* Ubah ukuran font sesuai kebutuhan */
+    margin-bottom: 10px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .box {
+    width: 280px;
+    padding: 20px;
+  }
+  .gambar-kecil {
+    width: 45%;
+  }
+  h1 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+  }
+  .icon-image {
+    width: 1.7rem; /* 8px = 0.5rem */
+  }
+  .icon-text {
+    font-size: 1rem; /* Ubah ukuran font sesuai kebutuhan */
+  }
+  .judul-box{
+    font-size: 1.5rem; /* Ubah ukuran font sesuai kebutuhan */
+  }
+  .box-text{
+    font-size: 1rem; /* Ubah ukuran font sesuai kebutuhan */
+    margin-bottom: 10px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .box {
+    width: 400px;
+    padding: 60px;
+  }
+  .gambar-kecil {
+    width: 40%;
+  }
+  h1 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+  }
+  .icon-image {
+    width: 2rem; /* 8px = 0.5rem */
+  }
+  .icon-text {
+    font-size: 1.5rem; /* Ubah ukuran font sesuai kebutuhan */
+  }
+  .judul-box{
+    font-size: 3rem; /* Ubah ukuran font sesuai kebutuhan */
+  }
+  .box-text{
+    font-size: 1.5rem; /* Ubah ukuran font sesuai kebutuhan */
+    margin-bottom: 10px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .box {
+    width: 400px;
+    padding: 60px;
+  }
+  .gambar-kecil {
+    width: 40%;
+  }
+  h1 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+  }
+  .icon-image {
+    width: 2rem; /* 8px = 0.5rem */
+  }
+  .icon-text {
+    font-size: 1.5rem; /* Ubah ukuran font sesuai kebutuhan */
+  }
+  .judul-box{
+    font-size: 3rem; /* Ubah ukuran font sesuai kebutuhan */
+  }
+  .box-text{
+    font-size: 1.5rem; /* Ubah ukuran font sesuai kebutuhan */
+    margin-bottom: 10px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .box {
+    width: 400px;
+    padding: 60px;
+  }
+  .gambar-kecil {
+    width: 25%;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-top: 40px;
+  }
+  .icon-image {
+    width: 2rem; /* 8px = 0.5rem */
+  }
+  .icon-text {
+    font-size: 1.5rem; /* Ubah ukuran font sesuai kebutuhan */
+  }
+  .judul-box{
+    font-size: 3rem; /* Ubah ukuran font sesuai kebutuhan */
+  }
+  .box-text{
+    font-size: 1.5rem; /* Ubah ukuran font sesuai kebutuhan */
+    margin-bottom: 10px;
+  }
 }
