@@ -15,7 +15,7 @@ h1 {
 
 .item {
   margin-bottom: 2%;
-  border: 0.0625rem solid #ccc; /* 1px = 0.0625rem */
+  border: 0.0625rem solid #ccc; /* 1px= 0.0625rem */
   padding: 0.625rem; /* 10px = 0.625rem */
   border-radius: 0.3125rem; /* 5px = 0.3125rem */
 }
