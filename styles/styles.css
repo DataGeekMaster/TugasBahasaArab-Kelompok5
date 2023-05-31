@@ -208,6 +208,9 @@ h1 {
     font-size: 2.5rem; /* Ubah ukuran font sesuai kebutuhan */
     margin-bottom: 12px;
   }
+   #close {
+    font-size: 4rem; /* 2px = 0.125rem */
+   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
