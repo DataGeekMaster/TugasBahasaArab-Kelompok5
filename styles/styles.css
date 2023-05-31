@@ -184,7 +184,7 @@ h1 {
 /* Medium devices (landscape tablets, 850px and up) */
 @media only screen and (min-width: 850px) {
   .box {
-    width: 525px;
+    width: 600px;
     padding: 100px;
   }
   .gambar-kecil {
