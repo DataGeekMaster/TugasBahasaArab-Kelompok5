@@ -202,6 +202,7 @@ h1 {
   }
   .judul-box{
     font-size: 5.5rem; /* Ubah ukuran font sesuai kebutuhan */
+    vertical-align: top;
   }
   .box-text{
     font-size: 2.5rem; /* Ubah ukuran font sesuai kebutuhan */
