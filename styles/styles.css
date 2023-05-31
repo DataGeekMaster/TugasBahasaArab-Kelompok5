@@ -184,11 +184,11 @@ h1 {
 /* Medium devices (landscape tablets, 850px and up) */
 @media only screen and (min-width: 850px) {
   .box {
-    width: 450px;
+    width: 525px;
     padding: 100px;
   }
   .gambar-kecil {
-    width: 0%;
+    width: 40%;
   }
   h1 {
     font-size: 1.8rem;
@@ -201,7 +201,7 @@ h1 {
     font-size: 1.5rem; /* Ubah ukuran font sesuai kebutuhan */
   }
   .judul-box{
-    font-size: 6rem; /* Ubah ukuran font sesuai kebutuhan */
+    font-size: 5.5rem; /* Ubah ukuran font sesuai kebutuhan */
   }
   .box-text{
     font-size: 2.5rem; /* Ubah ukuran font sesuai kebutuhan */
