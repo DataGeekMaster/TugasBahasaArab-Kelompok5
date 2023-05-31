@@ -181,6 +181,34 @@ h1 {
   }
 }
 
+/* Medium devices (landscape tablets, 850px and up) */
+@media only screen and (min-width: 850px) {
+  .box {
+    width: 500px;
+    padding: 100px;
+  }
+  .gambar-kecil {
+    width: 40%;
+  }
+  h1 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+  }
+  .icon-image {
+    width: 2rem; /* 8px = 0.5rem */
+  }
+  .icon-text {
+    font-size: 1.5rem; /* Ubah ukuran font sesuai kebutuhan */
+  }
+  .judul-box{
+    font-size: 6rem; /* Ubah ukuran font sesuai kebutuhan */
+  }
+  .box-text{
+    font-size: 2.5rem; /* Ubah ukuran font sesuai kebutuhan */
+    margin-bottom: 12px;
+  }
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .box {
