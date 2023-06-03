@@ -16,28 +16,32 @@ checkbox.addEventListener('change', () => {
 });
 
 menuIcon.addEventListener('click', function() {
-  if (menuBox.style.display === 'block') {
-    menuBox.style.right = '-200px';
-    setTimeout(function() {
-      menuBox.style.display = 'none';
-    }, 300);
+  if (menuBox.classList.contains('show')) {
+    menuBox.classList.add('close');
+    menuBox.classList.remove('show');
     if (memberListBox.classList.contains('show')) {
-      memberListBox.classList.remove('show');}
-  } else {
-    menuBox.style.display = 'block';
+      memberListBox.classList.remove('show');
+    }
     setTimeout(function() {
-      menuBox.style.right = '0';
-    }, 0);
+      menuBox.classList.remove('close');
+      menuBox.classList.add('hidden');
+    }, 300);
+  } else {
+    menuBox.classList.add('show');
+    menuBox.classList.remove('hidden');
   }
 });
 
 closeBtn.addEventListener('click', function() {
-  menuBox.style.right = '-200px';
-  setTimeout(function() {
-    menuBox.style.display = 'none';
-  }, 300);
+  menuBox.classList.add('close');
+  menuBox.classList.remove('show');
   if (memberListBox.classList.contains('show')) {
-    memberListBox.classList.remove('show');}
+    memberListBox.classList.remove('show');
+  }
+  setTimeout(function() {
+    menuBox.classList.remove('close');
+    menuBox.classList.add('hidden');
+  }, 300);
 });
 
 memberListicon.addEventListener('click', function() {
@@ -51,3 +55,4 @@ memberListicon.addEventListener('click', function() {
 closeMemberlist.addEventListener('click', function() {
   memberListBox.classList.remove('show');
 });
+
