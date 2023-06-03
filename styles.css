@@ -231,12 +231,9 @@ h1 {
 
 #memberList {
   position: fixed;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%) scale(0.1);
   opacity: 0;
   z-index: 9999;
-  width: 44vw;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
@@ -445,8 +442,10 @@ h1 {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .box {
-    width: 400px;
+    width: 600px;
     padding: 60px;
+    top: 100px;
+    left: 305px;
   }
   .gambar-kecil {
     width: 40%;
@@ -456,19 +455,66 @@ h1 {
     margin-top: 40px;
   }
   .judul-box{
-    font-size: 3rem; /* Ubah ukuran font sesuai kebutuhan */
+    font-size: 3.5rem; /* Ubah ukuran font sesuai kebutuhan */
+    vertical-align: top;
   }
   .box-text{
-    font-size: 1.5rem; /* Ubah ukuran font sesuai kebutuhan */
-    margin-bottom: 10px;
+    font-size: 2rem; /* Ubah ukuran font sesuai kebutuhan */
+    margin-bottom: 12px;
+  }
+   #close {
+    font-size: 4rem; /* 2px = 0.125rem */
+   }
+   .menu-icon {
+    width: 40px;
+    height: 35px;
+   }
+   #menu-box {
+    width: 600px;
+    height: 300px;
+   }
+   #icon {
+    width: 450px;
+    height: 62px;
+    top: 22%;
+    right: 13%;
+    border-radius: 40px;
+   }
+   .icon-text {
+    font-size: 27px;
+    margin-left: 60px;
+   }
+   .icon-image {
+    width: 2.5rem;
+   }
+   .label {
+    height: 37px;
+    width: 300px;
+    margin-top: 30%;
+    margin-left: 25%;
+  }
+  .ball {
+    width: 30px;
+    height: 30px;
+  }
+  .ball i{
+    font-size: 20px;
+  }
+  .checkbox:checked + .label .ball {
+    transform: translateX(260px);
+  }
+  .mode-text {
+    font-size: 19px;
   }
 }
 
 /* Medium devices (landscape tablets, 850px and up) */
 @media only screen and (min-width: 850px) and (max-width: 991px) {
   .box {
-    width: 620px;
-    padding: 80px;
+    width: 700px;
+    padding: 50px;
+    top: 150px;
+    left: 43%;
   }
   .gambar-kecil {
     width: 40%;
@@ -477,12 +523,8 @@ h1 {
     font-size: 3.3rem;
     margin-top: 40px;
   }
-  #memberList {
-    top: 70%;
-    left: 30%;
-  }
   .judul-box{
-    font-size: 5rem; /* Ubah ukuran font sesuai kebutuhan */
+    font-size: 3.5rem; /* Ubah ukuran font sesuai kebutuhan */
     vertical-align: top;
   }
   .box-text{
@@ -560,8 +602,9 @@ h1 {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .box {
-    width: 40vw;
+    width: 700px;
     padding: 60px;
+    top: 140px;
   }
   .gambar-kecil {
     width: 25%;
