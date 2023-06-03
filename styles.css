@@ -58,7 +58,7 @@ h1 {
     height: 25px;
     position: relative;
     cursor: pointer;
-  }
+}
 
   .menu-icon:hover {
     transform: scaleX(0.9) scaleY(0.9);
@@ -99,9 +99,11 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.1);
+    border-radius: 20px;
     opacity: 0;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
     transition: background 0.2s linear, opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 9997;
   }
   #menu-box.hidden {
     display: none;
@@ -208,6 +210,9 @@ h1 {
     border-radius: 50%;
     box-sizing: border-box;
     background-color: rgb(233, 233, 233);
+  }
+  .dark .icon-image {
+    border: black;
   }
 
 .icon-text {
@@ -460,7 +465,7 @@ h1 {
 }
 
 /* Medium devices (landscape tablets, 850px and up) */
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 850px) and (max-width: 991px) {
   .box {
     width: 620px;
     padding: 80px;
@@ -469,20 +474,65 @@ h1 {
     width: 40%;
   }
   h1 {
-    font-size: 1.8rem;
+    font-size: 3.3rem;
     margin-top: 40px;
   }
+  #memberList {
+    top: 70%;
+    left: 30%;
+  }
   .judul-box{
-    font-size: 5.5rem; /* Ubah ukuran font sesuai kebutuhan */
+    font-size: 5rem; /* Ubah ukuran font sesuai kebutuhan */
     vertical-align: top;
   }
   .box-text{
-    font-size: 2.5rem; /* Ubah ukuran font sesuai kebutuhan */
+    font-size: 2rem; /* Ubah ukuran font sesuai kebutuhan */
     margin-bottom: 12px;
   }
    #close {
     font-size: 4rem; /* 2px = 0.125rem */
    }
+   .menu-icon {
+    width: 40px;
+    height: 35px;
+   }
+   #menu-box {
+    width: 600px;
+    height: 300px;
+   }
+   #icon {
+    width: 44vh;
+    height: 6vh;
+    top: 22%;
+    right: 13%;
+    border-radius: 40px;
+   }
+   .icon-text {
+    font-size: 27px;
+    margin-left: 60px;
+   }
+   .icon-image {
+    width: 2.5rem;
+   }
+   .label {
+    height: 37px;
+    width: 300px;
+    margin-top: 30%;
+    margin-left: 25%;
+  }
+  .ball {
+    width: 30px;
+    height: 30px;
+  }
+  .ball i{
+    font-size: 20px;
+  }
+  .checkbox:checked + .label .ball {
+    transform: translateX(260px);
+  }
+  .mode-text {
+    font-size: 19px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
