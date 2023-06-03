@@ -17,7 +17,7 @@ body.dark {
 }
 
 .dark .gambar-kecil {
-  filter: brightness(0.9); /* Mengurangi kecerahan menjadi 50% */
+  filter: brightness(0.9); /* Mengurangi kecrahan menjadi 50% */
 }
 
 h1 {
