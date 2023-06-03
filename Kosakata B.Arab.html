@@ -1,29 +1,52 @@
 <!DOCTYPE html>
-<!--anu-->
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <title>Tugas Bahasa Arab</title>
 </head>
 <body>
-  <button onclick="toggleBox()" id="icon">
-    <img src="https://www.pngplay.com/wp-content/uploads/12/User-Avatar-Profile-Background-PNG-Clip-Art-Image.png" alt="Avatar" class="icon-image">
-    <span class="icon-text">Anggota Kelompok</span>
-  </button>
-  <div id="memberList">
-    <div class="box">
-      <span id="close" onclick="toggleBox()">X</span>
-      <h2 class="judul-box">Kelompok 1</h2>
-      <ul>
-        <li class="box-text">Abdurrahman Dzaky Safrullah</li>
-        <li class="box-text">Ahmad Yusuf</li>
-        <li class="box-text">Fadel Muhammad S</li>
-        <li class="box-text">Fadhil Fajri Rahman</li>
-        <li class="box-text">Muh. Fachri Rusli</li>
-        <li class="box-text">Muh. Sibgha</li>
-        <li class="box-text">Muh. Isa</li>
-      </ul>
+  <div class="menu-icon">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+
+  <div id="menu-box" class="hidden">
+
+    <div>
+      <button id="icon">
+        <img src="https://www.pngplay.com/wp-content/uploads/12/User-Avatar-Profile-Background-PNG-Clip-Art-Image.png" alt="Avatar" class="icon-image">
+        <span class="icon-text">Anggota Kelompok</span>
+      </button>
     </div>
+    <div id="memberList">
+      <div class="box">
+        <span id="close">X</span>
+        <h2 class="judul-box">Anggota Kelompok</h2>
+        <ul>
+          <li class="box-text">Abdurrahman Dzaky Safrullah</li>
+          <li class="box-text">Ahmad Yusuf</li>
+          <li class="box-text">Fadel Muhammad S</li>
+          <li class="box-text">Fadhil Fajri Rahman</li>
+          <li class="box-text">Muh. Fachri Rusli</li>
+          <li class="box-text">Muh. Sibgha</li>
+          <li class="box-text">Muh. Isa</li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <input type="checkbox" class="checkbox" id="checkbox">
+      <label for="checkbox" class="label">
+        <div class="ball">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+        </div>
+        <span class="mode-text">Light Mode</span>
+      </label>
+      <button id="close-btn">&times;</button>
+    </div>
+
   </div>
 
   <br>
@@ -31,7 +54,7 @@
 
   <div class="item">
     <h2>زُ بْدِيَّة: Alpukat</h2>
- <img src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2023/02/06/2007079822.jpg" alt="Gambar Alpukat" class="gambar-kecil">
+    <img src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2023/02/06/2007079822.jpg" alt="Gambar Alpukat" class="gambar-kecil">
     <p>Alpukat adalah buah yang lezat dan kaya akan lemak sehat. Ia memiliki kulit hijau dan daging kuning yang kaya akan nutrisi.</p>
   </div>
 
@@ -407,6 +430,7 @@ Budaya dan Tradisi: Zaitun memiliki nilai budaya yang tinggi dalam makanan dan m
 Zaitun adalah buah yang penting dalam budaya Mediterania dan dikenal karena minyak zaitunnya yang sehat dan rasanya yang khas. Baik dalam bentuk buahnya atau sebagai minyak, zaitun memiliki nilai kuliner yang tinggi dan memberikan manfaat kesehatan yang beragam.</p>
 </div>
 
-<script src="styles/script.js"></script>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/67fa924556.js" crossorigin="anonymous"></script>
 </body>
 </html>
