@@ -1,7 +1,7 @@
 var menuIcon = document.querySelector('.menu-icon');
 var menuBox = document.getElementById('menu-box');
 var closeBtn = document.getElementById('close-btn');
-
+//a//
 var memberListicon = document.getElementById('icon');
 var memberListBox = document.getElementById('memberList');
 var closeMemberlist = document.getElementById('close');
