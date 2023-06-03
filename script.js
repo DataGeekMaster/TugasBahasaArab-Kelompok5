@@ -56,3 +56,18 @@ closeMemberlist.addEventListener('click', function() {
   memberListBox.classList.remove('show');
 });
 
+window.addEventListener('scroll', function() {
+  var menuBox = document.getElementById('menu-box');
+  var windowHeight = window.innerHeight;
+  var windowScroll = window.scrollY || window.pageYOffset;
+
+  var menuBoxHeight = menuBox.offsetHeight;
+
+  var top = windowHeight / 2 - menuBoxHeight / 2 + windowScroll;
+  var left = '50%';
+
+  menuBox.style.top = top + 'px';
+  menuBox.style.left = left;
+});
+
+
